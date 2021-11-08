@@ -1,19 +1,19 @@
-const Navbar = () => {
-  const menuItems = [
-    'Home',
-    'About Us',
-    'Showcase',
-    'Blog',
-    'Contact',
-    'Sign in',
-  ];
+const navigationItems = [
+  'Home',
+  'About us',
+  'Showcase',
+  'Blog',
+  'Contact',
+  'Sign in',
+];
 
+const NavBar = () => {
   return (
-    <nav className="inline-flex justify-between list-none w-max">
-      {menuItems.map((item) => (
+    <nav className="hidden sm:inline-flex list-none font-medium text-hci-lila">
+      {navigationItems.map((item) => (
         <li
           key={item}
-          className="w-36 py-4 font-normal text-2xl text-center text-purple-900 hover:text-white hover:bg-purple-900"
+          className="px-5 py-2 whitespace-nowrap hover:bg-hci-lila hover:bg-opacity-50 hover:text-white cursor-pointer"
         >
           {item}
         </li>
@@ -22,4 +22,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
